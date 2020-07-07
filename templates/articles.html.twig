@@ -1,0 +1,13 @@
+{% include 'header.html.twig' %}
+
+<body>
+
+{% for article in articles %}
+
+  <div>  {{ article.title }} </div>
+  <img src="{{ article.image }}" alt="" />
+
+{% endfor %}
+
+</body>
+{% include 'footer.html.twig' %}
